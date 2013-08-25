@@ -1,0 +1,7 @@
+nose2>=0.4.7
+nose2-cov==1.04a
+
+-r ./testing/acceptance.txt
+-r ./testing/integration.txt
+-r ./testing/functional.txt
+-r ./testing/unit.txt

@@ -4,12 +4,20 @@ language: python
 
 python:
   - "3.3"
+  - "3.2"
   - "2.7"
   - "2.6"
   - "pypy"
 
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -r requirements.txt
+install:
+- pip install -r requirements.txt
+- pip install -r requirements/testing.txt
+- pip install -r requirements/documentation.txt
+- pip install coveralls
 
-# command to run tests, e.g. python setup.py test
-script: python setup.py test
+script:
+- nose2
+- feature_files=(`find ./ -maxdepth 1 -name "*.feature"`); if [ ${#feature_files[@]} -gt 0 ]; then behave ./tests/acceptance/; else echo "Skipping acceptance tests..."; fi;
+
+after_success:
+  - coveralls
