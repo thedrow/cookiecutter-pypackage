@@ -8,7 +8,7 @@ class FunctionalTestsLayer(object):
 
 class IntegrationTestsLayer(object):
     description = 'Integration Tests:'
-    
+
 
 class AcceptanceTestsLayer(object):
     description = 'Acceptance Tests:'

@@ -1,4 +1,2 @@
-rose>=0.1.0
-
 -r ./testing.txt
 -r ./documentation.txt

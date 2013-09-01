@@ -31,7 +31,7 @@ config = {
     'tests_requires': ['nose2>=0.4.7', 'nose2-cov==1.04a', 'behave>=1.2.3', 'mock>=1.0.1', 'forbiddenfruit>=0.1.0',
                        'what>=0.4.4'],
     'test_suite': 'nose2.collector.collector',
-    'license': "BSD3",
+    'license': 'BSD3',
     'zip_safe': False,
     'keywords': '{{ cookiecutter.repo_name }}',
     'classifiers': [
@@ -39,7 +39,7 @@ config = {
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
