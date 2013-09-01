@@ -1,5 +1,5 @@
 nose2>=0.4.7
-nose2-cov==1.04a
+nose2-cov==1.0a4
 
 -r ./testing/acceptance.txt
 -r ./testing/integration.txt
