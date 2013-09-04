@@ -1,6 +1,7 @@
 import os
 import subprocess
 
+
 def is_executing_under_continuous_integration_server():
     return os.getenv('CI', 'false') == 'true'
 
@@ -21,6 +22,10 @@ def run_behave():
         print('No feature files were found. Skipping acceptance tests...')
 
     return behave
+
+
+def run_pyflakes():
+    return subprocess.call(['pyflakes', '{{cookiecutter.repo_name}}'])
 
 
 def set_support_environment(path):
