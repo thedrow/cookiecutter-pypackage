@@ -1,6 +1,6 @@
 def main():
     import sys
-    from tests.common import run_nose2
+    from tests.common import run_behave
 
     behave = run_behave()
     sys.exit(behave)
